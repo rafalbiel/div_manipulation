@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .selected {
+            border: black 1px solid;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div>
+        <label for="width">Szerokość</label>
+        <input type="text" id="width">
+    </div>
+    <div>
+        <label for="height">Minimalna wysokość</label>
+        <input type="text" id="height">
+    </div>
+    <div>
+        <label for="height">Kolory</label>
+        <select id="colors">
+            <option value="empty"></option>
+            <option value="red">Czerwony</option>
+            <option value="green">Zielony</option>
+            <option value="blue">Niebieski</option>
+            <option value="yellow">Żółty</option>
+            <option value="black">Czarny</option>
+            <option value="white">Biały</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit" value="Ustaw">
+    </div>
+</form>
+<div id="area" class="selected"></div>
+<script src="script.js"></script>
+</body>
+</html>
